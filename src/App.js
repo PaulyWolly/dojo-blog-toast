@@ -9,8 +9,14 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="content">
-        <Home />
+      <div className="row">
+        <div className="col-lg-1"></div>
+        <div className="col-lg-10">
+          <div className="content">
+            <Home />
+          </div>
+        </div>
+        <div className="col-lg-1"></div>
       </div>
 
       <ToastComponent />

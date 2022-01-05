@@ -1,22 +1,22 @@
-import { useState } from "react"
 /* eslint-disable no-unused-vars */
+import { useState, useEffect } from "react"
+import ToastComponent from "../ToastComponent";
+import BlogList from "./BlogList";
+/* eslint-disable no-unused-vars */
+import useFetch from './useFetch';
+
+
 const Home = () => {
+const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs')
 
-  const [name, setName] = useState('mario');
-  const [age, setAge] = useState(25)
-
-  const handleClick = () => {
-  setName('LUIGI');
-  setAge(30);
-
-  }
 
   return (
 
     <div className="home">
-      <h2>Home page</h2>
-      <p>{name} is { age } years old.</p>
-      <button onClick={handleClick}>Click Me</button>
+      {error && <div>{ error }</div>}
+      {isPending && <div>Loading...</div>}
+      {blogs && <BlogList blogs={blogs} title="All Blogs" />}
+      {/* <BlogList blogs={blogs.filter((blog) => blog.author === 'Mario')} title="Mario's Blogs" handleDelete={handleDelete} />} */}
 
     </div>
 
