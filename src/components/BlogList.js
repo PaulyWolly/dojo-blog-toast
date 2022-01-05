@@ -15,7 +15,7 @@
         <div className="blog-preview" key={blog.id}>
           <h2>{blog.title}</h2>
           <p>Written by: {blog.author}</p>
-          <button onClick={() => handleDelete(blog.id)}>Delete blog</button>
+
         </div>
       ))}
     </div>
@@ -23,3 +23,9 @@
 }
 
 export default BlogList;
+
+// Blog endpoints @ http://localhost:8000
+// /blogs [GET] = Fetch ALL blogs
+// /blogs/{id} [GET] Fetch a single blog
+// /blogs [POST] Add a new blog
+// /blogs/{id} [DELETE] Delete a blog
