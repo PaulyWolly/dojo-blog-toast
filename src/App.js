@@ -1,16 +1,19 @@
+/* eslint-disable no-unused-vars */
 import './App.css';
 import ToastComponent from './ToastComponent';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
 
 function App() {
+
   return (
     <div className="App">
-      <div>
-        <h1>This is our start!</h1>
+      <Navbar />
+      <div className="content">
+        <Home />
       </div>
 
-      <p>React Bootstrap Toast</p>
       <ToastComponent />
-
     </div>
   );
 }

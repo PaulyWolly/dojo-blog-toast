@@ -1,0 +1,26 @@
+import { useState } from "react"
+/* eslint-disable no-unused-vars */
+const Home = () => {
+
+  const [name, setName] = useState('mario');
+  const [age, setAge] = useState(25)
+
+  const handleClick = () => {
+  setName('LUIGI');
+  setAge(30);
+
+  }
+
+  return (
+
+    <div className="home">
+      <h2>Home page</h2>
+      <p>{name} is { age } years old.</p>
+      <button onClick={handleClick}>Click Me</button>
+
+    </div>
+
+  );
+}
+
+export default Home;

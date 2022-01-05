@@ -2,3 +2,9 @@
   /* background-color: palegoldenrod; */
   color: #fff;
 }
+
+button strong {
+  color: #fff;
+  font-size: larger;
+  font-weight:bolder;
+}
