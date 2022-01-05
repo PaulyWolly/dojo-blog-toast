@@ -38,7 +38,7 @@ export default function ToastComponent() {
                 <Toast
                     show={showA}
                     onClose={toggleShowA}
-                    delay={5000}
+                    delay={3000}
                     autohide={true}
                     bg={'primary'} //'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'dark' | 'light'
                 >
