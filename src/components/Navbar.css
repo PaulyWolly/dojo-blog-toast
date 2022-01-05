@@ -1,0 +1,19 @@
+
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .nav-link.active {
+  /* color: #fff; */
+  /* background-color: aqua !important; */
+  font-weight: bold;
+  color: blue
+}
+
+li .active {
+  font-weight: bold;
+}
+
+.nav-link .link  {
+  color: #fff;
+}
+
+.nav-link .link .active {
+  color: rgb(219, 8, 8);
+}

@@ -38,9 +38,9 @@ body {
   color: #f1356d;
 }
 
-.navbar .links {
+.navbar li .active  {
   /* margin-left: auto; */
-
+  color: #f1356d;
 }
 
 .navbar a {
@@ -56,7 +56,9 @@ body {
 }
 
 .navbar a:active, .navbar a::backdrop {
-  border-bottom: 1px solid #f2f2f2;
+  /* border-bottom: 1px solid #f2f2f2; */
+  color: red;
+  background-color: aqua;
 }
 
 .content {
@@ -91,6 +93,10 @@ box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
   color: #f1356d;
   margin-bottom: 8px;
   margin-right: 20px;
+}
+
+.blog-preview a {
+  text-decoration: none;
 }
 
 .home title h2 {
@@ -159,4 +165,9 @@ svg.iconify.iconify--la {
 
 a.navbar-brand {
   padding-left: 60px
+}
+
+.body-content {
+  text-align: justify;
+  padding: 30px;
 }

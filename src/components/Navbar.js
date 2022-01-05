@@ -1,4 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Link } from 'react-router-dom'
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -11,15 +14,12 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <form className="mx-auto" >
             <ul className="navbar-nav">
-              <li className="nav-item active ps2 text-white">
-                <a className="nav-link" href="#">Home</a>
+              <li className="nav-item active">
+                  <Link className='nav-link link ' to="/">Home</Link>
               </li>
-              <li className="nav-item ps-2">
-                <a className="nav-link" href="#">Link</a>
+              <li className="nav-item active">
+                  <Link className='nav-link link ' to="/Create">Create Blog</Link>
               </li>
-              {/* <li className="nav-item ps-2">
-                <a className="nav-link disabled" href="#">Disabled</a>
-              </li> */}
             </ul>
           </form>
         </div>

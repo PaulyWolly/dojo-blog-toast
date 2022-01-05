@@ -34,8 +34,9 @@ export default function ToastComponent() {
                 </div>
             </footer>
 
-            <ToastContainer position='middle-center' >
+            <ToastContainer  position='top-end' >
                 <Toast
+                    style={{marginTop: '80px', marginRight: '20px'}}
                     show={showA}
                     onClose={toggleShowA}
                     delay={3000}

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 
@@ -10,29 +11,38 @@ const useFetch = (url) => {
 
   // customer hooks start with 'use'
   useEffect(() => {
-    fetch (url)
-      .then(res => {
 
+    const abortCont = new AbortController();
+
+    setTimeout(() => {
+      fetch (url, { signal: abortCont.signal })
+        .then(res => {
         if (!res.ok) {
           throw Error('Could not fetch the data for that resource.')
         }
         return res.json();
       })
-      .then(data => {
-        setData(data);
-        setIsPending(false);
-        setError(null)
+        .then(data => {
+          setData(data);
+          setIsPending(false);
+          setError(null)
       })
-      .catch(err => {
-        //console.log(err.message)
-        setError(err.message)
-        setIsPending(false)
-      })
+        .catch(err => {
+          if (err.name === 'AbortError') {
+            console.log('fetch aborted')
+          } else {
+            setError(err.message)
+            setIsPending(false)
+          }
+
+        })
+    }, 1000);
+
+      return () => abortCont.abort();
 
   }, [url]);
 
-  return { data, isPending, error }
-
+    return { data, isPending, Error }
 }
 
 export default useFetch;
