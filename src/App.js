@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Create from './components/NewBlog';
 
 import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom'
+import BlogDetails from './components/BlogDetails';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
               <Routes>
                 <Route exact path="/" element={<Home />}></Route>
                 <Route exact path="/Create" element={<Create />}></Route>
+                <Route exact path="/blogs/:id" element={<BlogDetails />}></Route>
               </Routes>
             </div>
           </div>
