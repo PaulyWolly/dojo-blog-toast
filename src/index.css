@@ -8,6 +8,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 * {
@@ -17,38 +19,142 @@ body {
 }
 
 .navbar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  /* padding: 20px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* max-width: 600px; */
+  /* margin: 0 auto; */
+  /* border-bottom: 1px solid #f2f2f2; */
 }
 
+.navbar-nav {
+  /* max-width: 100%; */
+  /* border: 1px solid #fff; */
+  position: absolute;
+  right:60px;
+  bottom: 10px;
+}
 .navbar h1 {
   color: #f1356d;
 }
 
 .navbar .links {
-  margin-left: auto;
+  /* margin-left: auto; */
+
 }
 
 .navbar a {
-  margin-left: 16px;
+  /* margin-left: 16px; */
   text-decoration: none;
   padding: 6px;
+  float: right;
+
 }
 
 .navbar a:hover {
   color: #f1356d;
 }
 
-.content {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+.navbar a:active, .navbar a::backdrop {
+  border-bottom: 1px solid #f2f2f2;
 }
 
-.home {
-  float: left;
+.content {
+  max-width: 600px;
+  /* margin: 40px auto; */
+  /* padding-left: 20px; */
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 60px;
+}
+
+/* .App {
+
+} */
+
+.blog-preview {
+  text-align: left;
+  padding: 10px 16px;
+  margin: 10px 20px;
+  border-bottom: 1px solid #fafafa;
+}
+
+.blog-preview:hover {
+box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+  margin-right: 20px;
+}
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  /* position: relative; */
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  /* overflow: hidden; */
+}
+footer.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.footer > .container a {
+  float:right;
+  cursor: pointer;
+  color: blue;
+}
+
+.footer > .icon-container {
+  float:right;
+  cursor: pointer;
+  color: blue;
+
+}
+
+svg.iconify.iconify--la {
+  color: blue;
+  position: absolute;
+  bottom: 10px;
+  right:20px;
+}
+
+a.navbar-brand {
+  padding-left: 60px
 }
