@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -16,10 +16,10 @@ const Navbar = () => {
           <form className="mx-auto" >
             <ul className="navbar-nav">
               <li className="nav-item ">
-                  <Link className='nav-link link active' to="/">Home</Link>
+                  <NavLink className='nav-link link ' to="/">Home</NavLink>
               </li>
               <li className="nav-item ">
-                  <Link className='nav-link link active' to="/Create">Create Blog</Link>
+                  <NavLink className='nav-link link' to="/Create">Create Blog</NavLink>
               </li>
             </ul>
           </form>
