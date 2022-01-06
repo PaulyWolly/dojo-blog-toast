@@ -20,7 +20,6 @@ import { Link } from "react-router-dom";
             <h2>{blog.title}</h2>
             <p>Written by: {blog.author}</p>
           </Link>
-
         </div>
       ))}
     </div>
