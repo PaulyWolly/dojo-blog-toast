@@ -11,6 +11,12 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+### `JSON server`
+You need to also install JSON server in order to POST/GET/DELETE files within this app
+### `npm install json-server` or 
+### `json-server`  from the CLI. If using json-server be sure to use '--watch'
+### eg. `npx json-server --watch data/db.json --port 8000`
+ 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
