@@ -3,10 +3,11 @@ import './App.css';
 import ToastComponent from './ToastComponent';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Create from './components/NewBlog';
+import Create from './components/Create';
 
 import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom'
 import BlogDetails from './components/BlogDetails';
+import NotFound from './components/NotFound';
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
                 <Route exact path="/" element={<Home />}></Route>
                 <Route exact path="/Create" element={<Create />}></Route>
                 <Route exact path="/blogs/:id" element={<BlogDetails />}></Route>
+                <Route exact path="*" element={<NotFound />}></Route>
+
               </Routes>
             </div>
           </div>

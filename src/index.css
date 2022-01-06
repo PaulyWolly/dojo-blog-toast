@@ -27,38 +27,14 @@ body {
   /* border-bottom: 1px solid #f2f2f2;
 } */
 
+/* Nav links position to right */
 .navbar-nav {
   /* max-width: 100%; */
   /* border: 1px solid #fff; */
   position: absolute;
   right:60px;
   bottom: 10px;
-}
-.navbar h1 {
-  color: #f1356d;
-}
 
-.navbar li .active  {
-  /* margin-left: auto; */
-  color: #f1356d;
-}
-
-.navbar a {
-  /* margin-left: 16px; */
-  text-decoration: none;
-  padding: 6px;
-  float: right;
-
-}
-
-.navbar a:hover {
-  color: #f1356d;
-}
-
-.navbar a:active, .navbar a::backdrop {
-  /* border-bottom: 1px solid #f2f2f2; */
-  color: red;
-  background-color: aqua;
 }
 
 .content {
@@ -169,5 +145,38 @@ a.navbar-brand {
 
 .body-content {
   text-align: justify;
-  padding: 30px;
+  padding: 20px;
+}
+
+.create {
+  max-width: 400px;
+  margin:0 auto;
+  text-align: center;
+}
+
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  padding: 8px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
 }

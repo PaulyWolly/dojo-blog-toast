@@ -1,19 +1,71 @@
 
-.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .show > .nav-link {
   /* color: #fff; */
   /* background-color: aqua !important; */
-  font-weight: bold;
-  color: blue
+  /* font-weight: bold; */
+  color: rgb(121, 120, 120)
 }
 
-li .active {
-  font-weight: bold;
+.navbar-dark .navbar-nav .nav-link
+{
+  /* color: #fff; */
+  /* background-color: aqua !important; */
+  /* font-weight: bold; */
+  color: blue;
 }
 
-.nav-link .link  {
-  color: #fff;
+.navbar-dark .navbar-nav .nav-link.active:active
+{
+  /* color: #fff; */
+  /* background-color: aqua !important; */
+  /* font-weight: bold; */
+  color:red;
 }
 
-.nav-link .link .active {
-  color: rgb(219, 8, 8);
+.nav-item {
+  color: rgb(196, 191, 191) !important;
+}
+
+.nav-item.active {
+  color: rgb(216, 17, 17) !important;
+  background-color: dimgray;
+}
+
+
+.navbar h1 {
+  color: #f1356d;
+}
+
+.navbar li .active  {
+  /* margin-left: auto; */
+  color: #f1356d;
+}
+
+.navbar a {
+  /* margin-left: 16px; */
+  text-decoration: none;
+  padding: 6px;
+  float: right;
+
+}
+
+.navbar a:hover {
+  color: #f1356d;
+}
+.navbar a {
+  /* border-bottom: 1px solid #f2f2f2; */
+  color: red;
+  background-color: rgb(50, 51, 51);
+}
+
+.navbar a:active {
+  /* border-bottom: 1px solid #f2f2f2; */
+  color: red;
+  background-color: rgb(101, 104, 104);
+}
+
+.navbar a::backdrop {
+  /* border-bottom: 1px solid #f2f2f2; */
+  color: red;
+  background-color: aqua;
 }

@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from 'react-router-dom'
+import './Navbar.css'
 
 const Navbar = () => {
   return (
@@ -14,11 +15,11 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <form className="mx-auto" >
             <ul className="navbar-nav">
-              <li className="nav-item active">
-                  <Link className='nav-link link ' to="/">Home</Link>
+              <li className="nav-item ">
+                  <Link className='nav-link link active' to="/">Home</Link>
               </li>
-              <li className="nav-item active">
-                  <Link className='nav-link link ' to="/Create">Create Blog</Link>
+              <li className="nav-item ">
+                  <Link className='nav-link link active' to="/Create">Create Blog</Link>
               </li>
             </ul>
           </form>
